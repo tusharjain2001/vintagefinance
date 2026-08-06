@@ -1,0 +1,75 @@
+.Sitemap {
+  width: 100%;
+  padding: 6%;
+}
+
+.ContentBox {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.ContentBox a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.H1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 3.906vw;
+  line-height: 120%;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.H2 {
+  margin-top: 45px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.25vw;
+  line-height: 1.875vw;
+  letter-spacing: -0.528px;
+  margin-bottom: 10px;
+}
+
+.Item a {
+  display: block;
+  padding-top: 5px;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  clear: left;
+  font-size: 1.25vw;
+  line-height: 1.875vw;
+  letter-spacing: -0.528px;
+  color: #777e90;
+  font-weight: 500;
+  margin: 16px 0;
+}
+
+.Item a:hover {
+  color: black;
+}
+
+@media (max-width: 500px) {
+  .Sitemap {
+    padding: 9% 4%;
+  }
+  .ContentBox {
+    grid-template-columns: auto auto;
+  }
+  .H2 {
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 30px;
+  }
+  .Item a {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .H1 {
+    line-height: 50px;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,76 @@
+.container {
+  padding: 120px 6%;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: 1.875vw;
+  line-height: 2.344vw;
+  margin-bottom: 0.938vw;
+}
+
+.list {
+  list-style: none;
+  margin-bottom: 3.906vw;
+}
+
+.list li {
+  font-weight: 400;
+  font-size: 1.563vw;
+  line-height: 2.031vw;
+  color: #7d7d7d;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.list li span {
+  font-weight: 700;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.list li svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header {
+  margin-bottom: 3.906vw;
+}
+
+.header p {
+  font-weight: 400;
+  font-size: 1.719vw;
+  line-height: 2.813vw;
+  color: #7d7d7d;
+  max-width: 85.938vw;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 50px 6%;
+  }
+
+  .h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .list li {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .list li span {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .header p {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 90%;
+  }
+}

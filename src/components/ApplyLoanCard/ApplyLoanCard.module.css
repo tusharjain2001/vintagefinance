@@ -1,0 +1,113 @@
+.ApplyCard {
+  background: #f1f3f6;
+  padding: 5% 6%;
+  display: flex;
+}
+
+.Card {
+  background: #211f1f;
+  margin-right: 2.344vw;
+  max-width: 46.875vw;
+  min-width: 43.75vw;
+}
+
+.Img {
+  width: 100%;
+  height: 22.422vw;
+  object-fit: contain;
+}
+
+.H3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.734vw;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.H6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25vw;
+  line-height: 140%;
+  color: #ffffff;
+  margin-top: 2.188vw;
+  height: 3.438vw;
+}
+
+.Text {
+  padding: 1.875vw 3.75vw 2.813vw;
+}
+
+.BtnG {
+  width: 19.922vw;
+  height: 3.984vw;
+  background: #b9f59d;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-size: 1.094vw;
+  line-height: 1.641vw;
+  color: #0b1642;
+}
+
+.BtnD {
+  width: 19.766vw;
+  height: 3.984vw;
+  background: linear-gradient(94.47deg, #e4e2c7 46.38%, #c3deea 97.4%);
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-size: 1.094vw;
+  line-height: 1.641vw;
+  color: #141416;
+}
+
+.BtnDiv {
+  padding-left: 3.75vw;
+  padding-bottom: 3.75vw;
+}
+
+@media (max-width: 500px) {
+  .ApplyCard {
+    flex-direction: column;
+  }
+
+  .Card {
+    min-width: 100%;
+    margin-top: 30px;
+  }
+
+  .H3 {
+    font-size: 20px;
+    line-height: 120%;
+    overflow-y: hidden;
+  }
+
+  .H6 {
+    font-size: 13px;
+    overflow-y: hidden;
+    height: 50px;
+  }
+
+  .Text {
+    padding: 24px 48px 48px;
+  }
+
+  .Img {
+    height: 172px;
+  }
+
+  .BtnDiv {
+    text-align: center;
+  }
+
+  .BtnG,
+  .BtnD {
+    width: 253px;
+    height: 48px;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+}

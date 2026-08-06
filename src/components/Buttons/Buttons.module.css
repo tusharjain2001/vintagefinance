@@ -1,0 +1,41 @@
+.BtnC {
+  width: 19.766vw;
+  height: 3.984vw;
+  background: #0b1642;
+  border: 2.00981px solid #0b1642;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.2);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.078vw;
+  line-height: 1.641vw;
+  color: #ffffff;
+  margin-right: 1.25vw;
+  border: none;
+  cursor: pointer;
+}
+
+.BtnL {
+  width: 19.766vw;
+  height: 3.984vw;
+  background: #b0f58f;
+  box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.2);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.078vw;
+  line-height: 1.641vw;
+  color: #0b1642;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .BtnC,
+  .BtnL {
+    margin-right: 0;
+    width: 253px;
+    height: 51px;
+    font-size: 13.8564px;
+    line-height: 21px;
+  }
+}

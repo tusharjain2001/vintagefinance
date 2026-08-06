@@ -1,0 +1,19 @@
+.fixed {
+  background: #030834;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  border-radius: 27.5px 0px 0px 27.5px;
+  width: 69px;
+  height: 55px;
+  position: fixed;
+  bottom: 200px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.fixed img {
+  width: 40px;
+  height: 40px;
+}

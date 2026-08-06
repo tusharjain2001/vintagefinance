@@ -1,0 +1,589 @@
+.Dsa {
+  margin: 2% 6% 6%;
+  background: #b9f59d;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 6.25vw;
+  padding: 4% 4% 0% 7%;
+  /* padding-bottom: 60px; */
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: flex-end;
+}
+
+.DoubleColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.DoubleColumn img {
+  width: 30.547vw;
+  height: 27.813vw;
+  margin-left: 2.344vw;
+  /* position: relative;
+  bottom: -80px; */
+  margin-bottom: -8px;
+}
+
+.FormBox {
+  background: #ffffff;
+  border-radius: 5px;
+  width: 36.172vw;
+  padding: 2.734vw;
+}
+
+.FormBox h2 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.734vw;
+  line-height: 3.516vw;
+  color: #0b1642;
+}
+
+.FormBox p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.016vw;
+  line-height: 1.406vw;
+  color: #0b1642;
+  opacity: 0.5;
+  margin: 0.781vw 0 1.953vw;
+}
+
+.FormBox input {
+  background: #e7e8ed;
+  width: 29.609vw;
+  height: 3.906vw;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.172vw;
+  line-height: 1.406vw;
+  color: #0b1642;
+  padding: 0.781vw 1.563vw;
+  margin-top: 0.781vw;
+}
+
+.FormBox input::placeholder {
+  opacity: 0.4;
+}
+
+input:focus {
+  outline: none;
+}
+
+.FormBox input[type="checkbox"] {
+  width: 1.172vw;
+  height: 1.172vw;
+  margin-right: 0.781vw;
+}
+
+.FormBox label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.016vw;
+  line-height: 1.719vw;
+  color: #0b1642;
+}
+
+.Wrapper {
+  display: flex;
+}
+
+.Pincode {
+  width: 13.047vw !important;
+  margin-right: 0.625vw;
+}
+
+.Experience {
+  background: #e7e8ed;
+  height: 3.906vw;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.172vw;
+  line-height: 1.406vw;
+  color: #0b1642;
+  padding: 0.781vw 1.563vw;
+  margin-top: 0.781vw;
+  width: 15.781vw;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../../assets/images/dsa/polygon-32-1.webp");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 94%;
+  background-size: 1.172vw 0.938vw;
+  cursor: pointer;
+}
+
+.Experience:focus,
+.Experience:hover {
+  outline: none;
+}
+
+.FormBox button {
+  width: 24.453vw;
+  height: 3.984vw;
+  background: #141416;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.078vw;
+  line-height: 1.641vw;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2.344vw;
+}
+
+.H1 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.297vw;
+  line-height: 5.859vw;
+  color: #010d23;
+}
+
+.H1 span {
+  font-weight: 500;
+  font-size: 2.969vw;
+  line-height: 5.156vw;
+}
+
+.P {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.719vw;
+  line-height: 2.344vw;
+  letter-spacing: -0.02em;
+  color: #010d23;
+  opacity: 0.5;
+  margin-top: 0.781vw;
+  margin-bottom: 3.906vw;
+}
+
+.Keyfeature {
+  background: #0a071f;
+  padding: 5% 6%;
+}
+
+.Keyfeature h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.078vw;
+  line-height: 5.859vw;
+  /* color: #fff; */
+  background: linear-gradient(
+    90deg,
+    #c6eaca -1.6%,
+    #efefef 19.65%,
+    #f1eac5 41.38%,
+    #cfe4e8 65.46%,
+    #c4d9e5 89.07%
+  );
+
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2.344vw;
+  width: 80vw;
+}
+
+.Keyfeature h6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.719vw;
+  line-height: 2.969vw;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.BoxWrapper {
+  display: grid;
+  grid-column-gap: 3.516vw;
+  grid-row-gap: 4.688vw;
+  grid-template-columns: auto auto;
+  padding: 1.563vw;
+  margin: 5.781vw 0 9.375vw;
+}
+
+.Box {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 38.438vw;
+  height: 10.781vw;
+  background: #22282e;
+}
+
+.Box span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9.219vw;
+  line-height: 2.188vw;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  position: relative;
+  top: -3.906vw;
+}
+
+.Box img {
+  width: 7.813vw;
+  height: 5.149vw;
+}
+
+.Box p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.406vw;
+  line-height: 2.188vw;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  width: 45%;
+}
+
+.ElegibilityRow {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.Elegibility {
+  background: #7543db;
+  border: 1px solid rgba(24, 173, 119, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 34px rgba(242, 44, 1, 0.15);
+  border-radius: 5px;
+  padding: 5% 6%;
+  width: 40.625vw;
+}
+
+.Elegibility h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-weight: 600;
+  font-size: 4.063vw;
+  line-height: 4.688vw;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.Elegibility p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.172vw;
+  line-height: 1.953vw;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 1.25vw;
+  margin-bottom: 2.813vw;
+}
+
+.Elegibility li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.172vw;
+  line-height: 1.719vw;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-top: 1.328vw;
+  margin-bottom: 1.328vw;
+}
+
+.Docs {
+  background: #ea5b3e;
+  border: 1px solid rgba(24, 173, 119, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 34px rgba(242, 44, 1, 0.15);
+  border-radius: 5px;
+  padding: 5% 6%;
+  width: 40.625vw;
+}
+
+.Docs h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.063vw;
+  line-height: 4.688vw;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.Docs p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.172vw;
+  line-height: 1.953vw;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 1.25vw;
+  margin-bottom: 2.813vw;
+}
+
+.Docs li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.172vw;
+  line-height: 1.719vw;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-top: 1.328vw;
+  margin-bottom: 1.328vw;
+}
+
+.inputFeedback {
+  color: red;
+  margin-top: 0.25rem;
+  margin-left: 10px;
+  font-size: 12px;
+  display: block;
+}
+
+.Mb {
+  display: none;
+}
+
+.Wb {
+  display: block;
+}
+
+@media (max-width: 500px) {
+  .Dsa {
+    margin: 0;
+  }
+  .Row {
+    flex-direction: column;
+    padding: 9% 6% 12%;
+    flex-wrap: nowrap;
+  }
+
+  .H1 {
+    overflow: hidden;
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .H1 span {
+    font-size: 24px;
+    line-height: 42px;
+  }
+  .P {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+  }
+
+  .DoubleColumn img {
+    margin-left: 0;
+    width: 345px;
+    height: 314px;
+  }
+
+  .Column {
+    align-items: center;
+  }
+
+  .FormBox {
+    padding: 30px;
+  }
+
+  .FormBox input {
+    width: 100%;
+    height: 45px;
+    font-size: 11.2635px;
+    line-height: 14px;
+    margin-top: 20px;
+  }
+
+  .Wrapper input[type="checkbox"] {
+    margin-top: 0;
+  }
+
+  .FormBox {
+    width: 100%;
+  }
+
+  .FormBox h2 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .FormBox p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .FormBox button {
+    width: 265px;
+    height: 45px;
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: 30px;
+  }
+
+  .Pincode {
+    width: 90% !important;
+    margin-right: 10px;
+  }
+
+  .Wrapper div:last-child {
+    width: 60% !important;
+  }
+
+  .FormBox label {
+    font-size: 9.76168px;
+    line-height: 17px;
+  }
+
+  .Pincode {
+    width: auto;
+  }
+  .Experience {
+    width: 100%;
+    font-size: 11.2635px;
+    line-height: 14px;
+    background-size: 12px 9px;
+    height: 45px;
+    margin-top: 20px;
+  }
+
+  .FormBox input[type="checkbox"] {
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
+  }
+
+  .Btn {
+    display: none;
+  }
+
+  .BrMb {
+    display: none;
+  }
+
+  .Keyfeature {
+    padding: 10% 6%;
+  }
+
+  .Keyfeature h2 {
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 30px;
+  }
+
+  .Keyfeature h6 {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .BoxWrapper {
+    grid-template-columns: auto;
+    padding: 0;
+  }
+
+  .Box {
+    width: auto;
+    height: 93px;
+  }
+
+  .Box span {
+    font-size: 38px;
+    line-height: 48px;
+    top: 0;
+  }
+
+  .Mb {
+    display: block;
+  }
+
+  .Wb {
+    display: none;
+  }
+
+  .Box img {
+    width: 68px;
+    height: 44px;
+  }
+
+  .Box p {
+    font-size: 12.242px;
+    line-height: 19px;
+  }
+
+  .ElegibilityRow {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Elegibility {
+    width: 100%;
+    padding: 9% 9%;
+    margin-bottom: 20px;
+  }
+
+  .Elegibility h4 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  .Elegibility p {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+
+  .Elegibility li {
+    font-size: 13px;
+    line-height: 21px;
+    overflow: initial;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Docs {
+    width: 100%;
+    padding: 9% 9%;
+  }
+
+  .Docs h4 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .Docs p {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+
+  .Docs li {
+    font-size: 13.4043px;
+    line-height: 21px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

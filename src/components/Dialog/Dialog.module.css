@@ -1,0 +1,53 @@
+.DialogRow {
+  display: flex;
+  padding: 0px 0px 20px;
+}
+
+.DialogRow div {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.DialogRow img {
+  width: 44px;
+  height: 42px;
+  margin-left: 25px;
+}
+
+.DialogRow h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0b1642;
+  margin-left: 10px;
+}
+
+.DialogMain {
+  max-width: 710px;
+  left: 70px !important;
+  top: 10px !important;
+}
+
+@media (max-width: 500px) {
+  .DialogMain {
+    max-width: auto;
+    left: 0px !important;
+    top: -100px !important;
+  }
+
+  .Mb {
+    display: none !important;
+  }
+
+  .DialogRow img {
+    width: 60px;
+    height: 60px;
+    margin-left: 0;
+  }
+}

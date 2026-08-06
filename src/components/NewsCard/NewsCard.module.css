@@ -1,0 +1,81 @@
+.Card {
+  width: 508px;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+
+.Img img {
+  width: 508px;
+  height: 230px;
+}
+
+.separator {
+  display: none;
+}
+
+.H2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  color: #0b1642;
+}
+
+.P {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.375px;
+  line-height: 22px;
+  color: #0b1642;
+  opacity: 0.5;
+}
+
+.ProfileImg {
+  background: #c4c4c4;
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+}
+
+.H5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.102px;
+  line-height: 21px;
+  color: #0b1642;
+}
+
+.H6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  color: #0b1642;
+  opacity: 0.5;
+}
+
+.Author {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.SubCard {
+  padding: 16px;
+}
+
+ol {
+  margin: 0 !important;
+}
+
+.SubCard a {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .Card {
+    margin-top: 36px;
+  }
+}

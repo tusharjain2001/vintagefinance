@@ -1,0 +1,382 @@
+/* .container {
+  padding: 0% 0% 0% 6%;
+} */
+
+/* .upper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  background-image: url("../../assets/emi/emi-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 47.344vw;
+  position: relative;
+}
+
+.h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.688vw;
+  line-height: 5.625vw;
+  letter-spacing: 0.05em;
+  color: #0b1642;
+  position: absolute;
+  top: 6.25vw;
+  left: 11.719vw;
+  width: 30.078vw;
+}
+
+.arrow {
+  margin-left: 4px;
+  margin-bottom: -2px;
+  height: 2.734vw;
+}
+
+.right {
+  background-image: url("../../assets/emi/emi-calc.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.lower {
+  background: #141416;
+  padding: 120px 6%;
+}
+
+.lowerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h5 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.813vw;
+  line-height: 3.438vw;
+  background: linear-gradient(94.23deg, #c6e8ca 5.5%, #efe9c5 53.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 1.563vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1.953vw;
+  color: #fff;
+  margin-bottom: 1.172vw;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.406vw;
+  color: #ffffff;
+}
+
+.footer h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.016vw;
+  line-height: 1.406vw;
+  color: #ffffff;
+}
+.header input,
+.p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.016vw;
+  line-height: 1.406vw;
+  color: #ffffff;
+}
+
+.boxFlex {
+  display: flex;
+}
+
+.box {
+  width: 7.813vw;
+  height: 5.469vw;
+  background: rgba(255, 255, 255, 0.2);
+  /* background: #777e91; */
+  border-radius: 0.781vw;
+  margin-right: 1.172vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxResult {
+  width: 7.813vw;
+  height: 5.469vw;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.781vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxHeading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.938vw;
+  line-height: 1.406vw;
+  text-align: center;
+  color: #ffffff;
+  /* padding: 30px 20px 0px; */
+  /* width: 105px; */
+}
+
+.boxHeading span {
+  font-size: 0.938vw;
+  line-height: 1.406vw;
+}
+
+.finalAmount {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.016vw;
+  line-height: 1.406vw;
+  text-align: center;
+  color: #ffffff;
+}
+
+.inputAmount {
+  /* width: 100%; */
+  display: inline-block;
+  /* max-width: 160px; */
+  height: 2.813vw;
+  /* background-color: red; */
+  border-bottom: none !important;
+}
+
+.inputAmount::after {
+  border-bottom: none !important;
+}
+
+.inputAmount::before {
+  border-bottom: none !important;
+}
+.inputAmount input {
+  text-align: right;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.inputAmount input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputAmount input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.bottom {
+  margin-top: 0px;
+}
+
+.disclaimer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.859vw;
+  line-height: 1.172vw;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.disclaimer span {
+  font-style: bold;
+  font-weight: 600;
+  color: #fff;
+}
+
+.inputWrapper,
+.inputTenure,
+.inputRate {
+  display: grid;
+  width: 7.813vw;
+  /* border: 1px solid rgba(255, 255, 255, 0.15); */
+  padding: 5px 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  align-items: center;
+}
+
+.inputWrapper {
+  grid-template-columns: 1fr 4fr;
+}
+
+.inputRate {
+  grid-template-columns: 0.7fr 1fr;
+}
+
+.inputTenure {
+  grid-template-columns: 0.4fr 1fr;
+}
+
+.wrap {
+  position: relative;
+}
+
+.intErr {
+  position: absolute;
+  top: -4.688vw;
+  font-size: 0.938vw;
+  color: #e11f35;
+  width: 19.531vw;
+  right: 0px;
+  padding: 3px;
+  background: rgba(255, 255, 255, 1);
+}
+
+@media (max-width: 500px) {
+  /* .upper {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    height: 420px;
+    order: 2;
+  }
+
+  .h2 {
+    font-size: 45px;
+    line-height: 52px;
+    font-weight: 800;
+    left: 27px;
+    top: 48px;
+    width: 322px;
+    overflow-y: hidden;
+  }
+
+  .right {
+    order: 1;
+    height: 360px;
+  } */
+
+  .lower {
+    padding: 6%;
+    /* padding: 40px 0px; */
+  }
+
+  .lowerContent {
+    align-items: initial;
+  }
+
+  .h5 {
+    font-size: 40px;
+    line-height: 50px;
+    width: 204px;
+    overflow-y: hidden;
+    margin-bottom: 0;
+    margin: auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+    gap: 20px;
+  }
+
+  .header h4,
+  .header input,
+  .header p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .footer h4 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .wrap {
+    position: inherit;
+  }
+
+  .grid {
+    position: relative;
+    padding-top: 40px;
+    margin-bottom: 5px;
+  }
+
+  .intErr {
+    top: 0px;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .boxHeading {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .boxHeading span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .boxFlex {
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 160px;
+    height: 100px;
+  }
+
+  .boxResult {
+    width: 160px;
+    height: 100px;
+  }
+
+  .bottom {
+    margin-top: 36px;
+  }
+  .disclaimer {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .inputWrapper,
+  .inputTenure,
+  .inputRate {
+    width: 120px;
+  }
+
+  .finalAmount {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .intErr {
+    font-size: 11px;
+  }
+
+  .grid:last-child {
+    margin-bottom: 36px;
+  }
+}

@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.App {
+  padding-top: 6.25vw;
+}
+
+img {
+  object-fit: contain;
+}
+
+@media (max-width: 500px) {
+  * {
+    overflow-x: hidden;
+  }
+  .App {
+    padding-top: 80px;
+  }
+}

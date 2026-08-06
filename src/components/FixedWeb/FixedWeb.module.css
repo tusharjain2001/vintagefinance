@@ -1,0 +1,58 @@
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 21px;
+  background: rgba(243, 243, 247, 0.9);
+  border: 0.5px solid rgba(3, 8, 52, 0.1);
+  box-sizing: border-box;
+  border-radius: 50px;
+  width: 251.1px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.round {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.fixed img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.round img {
+  margin-right: 0;
+}
+
+/* .text {
+  display: block;
+  transition: display 0.2s ease 0.5s;
+} */
+
+.text h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  font-feature-settings: "pnum" on, "onum" on;
+  color: #0075ff;
+}
+
+.text h6 {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  font-feature-settings: "pnum" on, "onum" on;
+  color: #030834;
+  margin-top: 3px;
+}

@@ -1,0 +1,143 @@
+.Cibil {
+  padding: 1% 0% 0% 6%;
+  /* background-image: url("../../assets/images/section-1/group-15115-min.webp"); */
+
+  background-image: url("../../assets/images/section-5/bg/background.webp");
+  background-size: cover;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 6.25vw;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.PersonalLoan {
+  width: 43.984vw;
+  height: 43.984vw;
+}
+
+.DoubleColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+
+.H1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.922vw;
+  line-height: 6.094vw;
+  letter-spacing: -0.02em;
+  color: #010d23;
+}
+
+.P {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.563vw;
+  line-height: 2.891vw;
+  color: #010d23;
+  margin-top: 3.125vw;
+  margin-bottom: 2.344vw;
+}
+
+.Input {
+  background: #ffffff;
+  backdrop-filter: blur(24px);
+  width: 18.594vw;
+  height: 3.594vw;
+  border: none;
+  padding: 1.172vw;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.094vw;
+  line-height: 1.641vw;
+  color: #000000;
+}
+
+.Btn {
+  background: #21201f;
+  backdrop-filter: blur(50px);
+  width: 15.391vw;
+  height: 3.594vw;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.094vw;
+  line-height: 1.641vw;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.inputFeedback {
+  color: red;
+  margin-top: 0.25rem;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  .Cibil {
+    background-image: url("../../assets/images/section-5/bg/background.webp");
+  }
+  .DoubleColumn {
+    flex: 1;
+  }
+
+  .H1 {
+    font-size: 42px;
+    line-height: 50px;
+    letter-spacing: -0.02em;
+    overflow-y: hidden;
+    font-weight: 800;
+    width: 82%;
+  }
+
+  .Row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .Br {
+    display: none;
+  }
+
+  .P {
+    font-size: 13px;
+    line-height: 21px;
+    width: 60%;
+  }
+
+  .Input {
+    width: 178px;
+    height: 42px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .Btn {
+    width: 147px;
+    height: 42px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .PersonalLoan {
+    width: 326px;
+    height: 340px;
+    margin-top: 51px;
+  }
+  .Row {
+    padding-top: 45px;
+  }
+}

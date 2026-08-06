@@ -1,0 +1,22 @@
+.LogoImg {
+  width: 15vw;
+  height: 2.5vw;
+  object-fit: contain;
+}
+
+.Logo {
+  width: 25%;
+  border-right: 1px solid #353945;
+}
+
+@media (max-width: 500px) {
+  .LogoImg {
+    width: 206.29px;
+    height: 40px;
+  }
+
+  .Logo {
+    width: 70%;
+    border-right: none;
+  }
+}

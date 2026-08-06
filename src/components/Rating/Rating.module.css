@@ -1,0 +1,107 @@
+.Rating {
+  background: url("../../assets/images/section-6/rating/group-15549.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5% 6%;
+}
+
+.dots {
+  position: initial !important;
+}
+
+.dots button::before {
+  color: #fff !important;
+}
+
+.RatingCards {
+  width: 75vw;
+  margin: auto;
+}
+
+.H2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.219vw;
+  line-height: 4.688vw;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+
+.P {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.484vw;
+  line-height: 2.734vw;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #000000;
+  opacity: 0.6;
+  margin-top: 1.25vw;
+  margin-bottom: 3.906vw;
+}
+
+.Img {
+  width: 4.995vw;
+  height: 4.995vw;
+  object-fit: contain;
+  z-index: 8;
+}
+
+.Btn {
+  background: #000000;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.2);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.082vw;
+  line-height: 1.641vw;
+  color: #ffffff;
+  width: 19.766vw;
+  height: 3.984vw;
+  border: none;
+  cursor: pointer;
+}
+
+.BtnDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 6.641vw;
+}
+
+.BrDe {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .Rating {
+    padding: 15% 6%;
+  }
+
+  .H2 {
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: -0.04em;
+    overflow-y: hidden;
+  }
+
+  .P {
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.04em;
+  }
+
+  .BrMb {
+    display: none;
+  }
+
+  .BrDe {
+    display: block;
+  }
+
+  .Btn {
+    width: 253px;
+    height: 51px;
+    font-size: 13.8564px;
+    line-height: 21px;
+  }
+}

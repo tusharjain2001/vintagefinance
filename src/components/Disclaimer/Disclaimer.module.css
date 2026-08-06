@@ -1,0 +1,48 @@
+.H1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.078vw;
+  line-height: 6.953vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+}
+
+.H5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.406vw;
+  line-height: 1.953vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  margin-right: 2.344vw;
+  margin-top: 1.172vw;
+}
+
+.P {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.406vw;
+  line-height: 2.734vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  width: 90%;
+  margin-top: 1.953vw;
+  padding-bottom: 5.469vw;
+}
+
+@media (max-width: 500px) {
+  .H1 {
+    font-size: 44px;
+    line-height: 60px;
+  }
+
+  .H5 {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .P {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}

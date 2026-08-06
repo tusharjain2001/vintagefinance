@@ -1,0 +1,332 @@
+.PersonalLoan {
+  background: #141416;
+  padding: 5% 6%;
+}
+
+.H2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5.078vw;
+  line-height: 6.25vw;
+  /* color: #c7e9c9; */
+  background: linear-gradient(
+    89.45deg,
+    #c8e9ca 6.63%,
+    #cfd5c8 24.58%,
+    #dcd9c1 42.15%,
+    #dcd9c1 53.72%,
+    #c7e0e9 73.38%,
+    #c6e0eb 89.85%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.P {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.563vw;
+  line-height: 2.734vw;
+  letter-spacing: -0.02em;
+  color: #777e90;
+  margin-top: 2.344vw;
+}
+
+.LoanCards {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  margin-top: 4.688vw;
+  margin-bottom: 7.578vw;
+}
+
+.LoanCard {
+  width: 14.902vw;
+  height: 23.896vw;
+  cursor: pointer;
+  margin: 0 1.563vw;
+}
+
+.LoanProducts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3vw;
+  margin-top: 3.125vw;
+}
+
+.LoanProducts > div:first-child {
+  flex: 1 1 auto;
+  max-width: 66%;
+}
+
+.LoanProducts > div:last-child {
+  flex-shrink: 0;
+}
+
+.H5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.563vw;
+  line-height: 2.5vw;
+  color: #ffffff;
+}
+
+.H6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25vw;
+  line-height: 2.422vw;
+  letter-spacing: -0.02em;
+  color: #777e90;
+  margin-top: 1.406vw;
+}
+
+.H4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.063vw;
+  line-height: 4.688vw;
+  letter-spacing: -0.02em;
+  /* color: #bee2d4; */
+  /* margin-top: 104px; */
+  background: linear-gradient(
+    90deg,
+    #bee2d4 -4.43%,
+    #c2e0d1 16.66%,
+    #dad8bf 36.16%,
+    #dad8c5 57.78%,
+    #c3cfdc 75.7%,
+    #bacce8 96.79%
+  );
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.LoanProducts .Btn {
+  background: linear-gradient(94.47deg, #e4e2c7 46.38%, #c3deea 97.4%);
+  width: 19.766vw;
+  height: 3.984vw;
+  border: none;
+  display: block;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.016vw;
+  line-height: 1.484vw;
+  color: #141416;
+}
+
+.LoanType {
+  display: flex;
+  margin-top: 6.563vw;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.LoanType div {
+  width: 15.625vw;
+  height: 12.5vw;
+  margin: auto;
+  text-align: center;
+  flex: 20%;
+}
+
+.LoanTypeImg {
+  width: 6.451vw;
+  height: 6.451vw;
+}
+
+.H3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.094vw;
+  line-height: 2.5vw;
+  color: #ffffff;
+}
+
+.BrWe {
+  display: none;
+}
+
+.LoanCardsMb {
+  display: none;
+}
+
+.ExtraStyle {
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.BrMb {
+  display: none;
+}
+
+.bottom {
+  margin-top: 30px;
+}
+
+.disclaimer {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.859vw;
+  line-height: 1.172vw;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.disclaimer span {
+  font-style: bold;
+  font-weight: 600;
+  color: #fff;
+}
+
+@media (max-width: 900px) and (min-width: 501px) {
+  .LoanProducts {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .LoanProducts > div:first-child {
+    max-width: 100%;
+  }
+
+  .LoanProducts .Btn {
+    width: 253px;
+    height: 51px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ExtraStyle {
+    visibility: hidden;
+    display: block;
+  }
+
+  .H2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    overflow-y: hidden;
+  }
+
+  .BrMb {
+    display: none;
+  }
+
+  .BrWe {
+    display: block;
+  }
+
+  .P {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+  }
+
+  .LoanCards {
+    display: none;
+  }
+
+  .LoanCardsMb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .LoanCardsMb img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+  }
+
+  .BtnMb {
+    background: #24282e;
+    height: 37px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+  }
+
+  .LoanProducts {
+    flex-direction: column;
+  }
+
+  .LoanProducts .Btn {
+    width: 253px;
+    height: 51px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .H6 {
+    margin-bottom: 60px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .H5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .H4 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.02em;
+    overflow-y: hidden;
+    margin-top: 0;
+  }
+
+  .LoanType {
+    margin-top: 0;
+  }
+
+  .LoanType div {
+    flex: 33%;
+    /* text-align: left; */
+    height: 120px;
+  }
+
+  .H3 {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .LoanTypeImg {
+    width: 55px;
+    height: 55px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .bottom {
+    margin-top: 20px;
+  }
+  .disclaimer {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}

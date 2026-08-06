@@ -1,0 +1,712 @@
+/* Matches site design system: Open Sans (global), vw-based type scale,
+   navy #0b1642, letter-spacing -0.04em, 500px mobile breakpoint. */
+
+.BackToHome {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.172vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  padding: 3.125vw 6% 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Page {
+  padding: 1.5vw 6% 6%;
+  color: #0b1642;
+}
+
+/* ---------- Hero / Introduction ---------- */
+.Hero {
+  border-bottom: 1px solid rgba(11, 22, 66, 0.1);
+  padding-bottom: 3.125vw;
+}
+
+.PageTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 4.063vw;
+  line-height: 4.688vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  margin-bottom: 1.563vw;
+}
+
+.SubTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.031vw;
+  line-height: 2.813vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  margin-bottom: 1.172vw;
+}
+
+.Intro {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.406vw;
+  line-height: 2.344vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  opacity: 0.7;
+}
+
+/* ---------- Generic Section ---------- */
+.Section {
+  padding: 3.125vw 0;
+  border-bottom: 1px solid rgba(11, 22, 66, 0.1);
+}
+
+.SectionTitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5vw;
+  line-height: 3.125vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  margin-bottom: 1.563vw;
+}
+
+.SectionLead {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.406vw;
+  line-height: 2.344vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  opacity: 0.7;
+  margin-bottom: 1.953vw;
+}
+
+/* ---------- Contact card (Level 1) ---------- */
+.ContactCard {
+  background: #f3f6f1;
+  border-radius: 0.938vw;
+  padding: 2.344vw;
+}
+
+.Badge {
+  display: inline-block;
+  background: #0b1642;
+  color: #fff;
+  font-size: 1.094vw;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  padding: 0.469vw 1.25vw;
+  border-radius: 3.125vw;
+  margin-bottom: 1.563vw;
+}
+
+.ContactGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5vw;
+}
+
+.ContactItem {
+  display: flex;
+  flex-direction: column;
+  min-width: 15.625vw;
+}
+
+.ContactLabel {
+  font-size: 1.016vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #0b1642;
+  opacity: 0.55;
+  margin-bottom: 0.469vw;
+}
+
+.ContactItem a {
+  color: #0b1642;
+  font-weight: 600;
+  font-size: 1.328vw;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.ContactItem a:hover {
+  text-decoration: underline;
+}
+
+.Address {
+  font-style: normal;
+  font-size: 1.328vw;
+  line-height: 1.953vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  opacity: 0.8;
+}
+
+/* ---------- Flowchart ---------- */
+.Flowchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FlowNode {
+  width: 100%;
+  max-width: 43.75vw;
+  border-radius: 0.938vw;
+  padding: 1.719vw 2.031vw;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.FlowStart {
+  background: #0b1642;
+  color: #fff;
+  font-size: 1.563vw;
+  line-height: 2.031vw;
+  font-weight: bold;
+  letter-spacing: -0.04em;
+}
+
+.FlowLevel {
+  background: #fff;
+  border: 2px solid #0b1642;
+  text-align: left;
+}
+
+.FlowRbi {
+  background: #f3f6f1;
+  border: 2px solid #0b1642;
+  text-align: center;
+}
+
+.LevelTag {
+  display: inline-block;
+  background: #b0f58f;
+  color: #0b1642;
+  font-size: 0.938vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 0.313vw 0.938vw;
+  border-radius: 3.125vw;
+  margin-bottom: 0.781vw;
+}
+
+.LevelName {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.563vw;
+  line-height: 2.031vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  margin-bottom: 0.156vw;
+}
+
+.LevelDesignation {
+  font-size: 1.172vw;
+  line-height: 1.641vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  opacity: 0.6;
+  margin-bottom: 0.781vw;
+}
+
+.LevelDetails {
+  list-style: none;
+  margin-top: 0.625vw;
+}
+
+.LevelDetails li {
+  font-size: 1.172vw;
+  line-height: 1.797vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  opacity: 0.85;
+  margin-bottom: 0.469vw;
+}
+
+.LevelDetails li span {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.LevelDetails a {
+  color: #0b1642;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.LevelDetails a:hover {
+  text-decoration: underline;
+}
+
+.RbiInlineLink {
+  display: inline-block;
+  margin-top: 0.625vw;
+  color: #0b1642;
+  font-weight: 600;
+  font-size: 1.172vw;
+  letter-spacing: -0.04em;
+  text-decoration: underline;
+}
+
+/* Arrow connectors */
+.FlowArrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.469vw 0;
+}
+
+.ArrowNote {
+  font-size: 1.016vw;
+  font-style: italic;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  opacity: 0.5;
+  margin-bottom: 0.313vw;
+}
+
+.ArrowLine {
+  width: 2px;
+  height: 1.719vw;
+  background: rgba(11, 22, 66, 0.3);
+}
+
+.ArrowHead {
+  color: rgba(11, 22, 66, 0.3);
+  font-size: 1.094vw;
+  line-height: 1;
+  margin-top: -0.156vw;
+}
+
+/* ---------- Timeline table ---------- */
+.TableWrap {
+  overflow-x: auto;
+}
+
+.Table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 37.5vw;
+}
+
+.Table th,
+.Table td {
+  text-align: left;
+  padding: 1.094vw 1.406vw;
+  border: 1px solid rgba(11, 22, 66, 0.12);
+  font-size: 1.328vw;
+  line-height: 1.875vw;
+  letter-spacing: -0.04em;
+}
+
+.Table th {
+  background: #0b1642;
+  color: #fff;
+  font-weight: bold;
+}
+
+.Table td {
+  color: #0b1642;
+  opacity: 0.85;
+}
+
+.Table tbody tr:nth-child(even) {
+  background: #f3f6f1;
+}
+
+/* ---------- Form ---------- */
+.Form {
+  max-width: 62.5vw;
+}
+
+.FormRow {
+  display: flex;
+  gap: 1.563vw;
+  flex-wrap: wrap;
+}
+
+.Field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 18.75vw;
+  margin-bottom: 1.406vw;
+}
+
+.Field label {
+  font-size: 1.172vw;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  margin-bottom: 0.625vw;
+}
+
+.Field input,
+.Field select,
+.Field textarea {
+  font-family: inherit;
+  font-size: 1.25vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  padding: 0.938vw 1.094vw;
+  border: 1px solid rgba(11, 22, 66, 0.25);
+  border-radius: 0.625vw;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.Field input:focus,
+.Field select:focus,
+.Field textarea:focus {
+  border-color: #0b1642;
+}
+
+.Field textarea {
+  resize: vertical;
+}
+
+.Error {
+  color: #d64545;
+  font-size: 1.016vw;
+  letter-spacing: -0.04em;
+  margin-top: 0.469vw;
+}
+
+/* ---------- Captcha ---------- */
+.CaptchaRow {
+  display: flex;
+  align-items: center;
+  gap: 0.938vw;
+  flex-wrap: wrap;
+}
+
+.CaptchaCode {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 1.875vw;
+  letter-spacing: 0.469vw;
+  color: #0b1642;
+  background: repeating-linear-gradient(
+    45deg,
+    #f3f6f1,
+    #f3f6f1 6px,
+    #e7ece4 6px,
+    #e7ece4 12px
+  );
+  border: 1px solid rgba(11, 22, 66, 0.25);
+  border-radius: 0.625vw;
+  padding: 0.625vw 1.25vw;
+  text-decoration: line-through;
+  text-decoration-color: rgba(11, 22, 66, 0.35);
+  transform: skewX(-6deg);
+  user-select: none;
+}
+
+.CaptchaRefresh {
+  background: transparent;
+  border: 1px solid rgba(11, 22, 66, 0.25);
+  border-radius: 0.625vw;
+  color: #0b1642;
+  font-size: 1.406vw;
+  line-height: 1;
+  padding: 0.781vw 0.938vw;
+  cursor: pointer;
+}
+
+.CaptchaRefresh:hover {
+  background: #f3f6f1;
+}
+
+.CaptchaInput {
+  flex: 1;
+  min-width: 14.063vw;
+  text-transform: uppercase;
+}
+
+.SubmitBtn {
+  background: #0b1642;
+  color: #fff;
+  border: none;
+  border-radius: 0.625vw;
+  padding: 1.094vw 2.5vw;
+  font-size: 1.25vw;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.SubmitBtn:hover {
+  opacity: 0.9;
+}
+
+.SubmitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.SubmitError {
+  color: #d64545;
+  font-size: 1.172vw;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.094vw;
+}
+
+.SuccessNote {
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 1.328vw;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.094vw;
+}
+
+.SecondaryBtn {
+  margin-top: 1.25vw;
+  background: transparent;
+  color: #0b1642;
+  border: 1px solid #0b1642;
+  border-radius: 0.625vw;
+  padding: 0.781vw 1.719vw;
+  font-size: 1.172vw;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+}
+
+.SuccessBox {
+  background: #f3f6f1;
+  border: 1px solid #b0f58f;
+  border-radius: 0.938vw;
+  padding: 2.188vw;
+  max-width: 62.5vw;
+}
+
+.SuccessBox h3 {
+  font-weight: bold;
+  font-size: 1.563vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  margin-bottom: 0.625vw;
+}
+
+.SuccessBox p {
+  font-size: 1.328vw;
+  line-height: 2.031vw;
+  letter-spacing: -0.04em;
+  color: #0b1642;
+  opacity: 0.75;
+}
+
+/* ---------- RBI Ombudsman ---------- */
+.RbiSection {
+  border-bottom: none;
+}
+
+.RbiBtn {
+  display: inline-block;
+  background: #b0f58f;
+  color: #0b1642;
+  font-weight: bold;
+  font-size: 1.25vw;
+  letter-spacing: -0.04em;
+  padding: 1.094vw 2.344vw;
+  border-radius: 0.625vw;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.RbiBtn:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Mobile (matches site's 500px breakpoint + px fallbacks) ---------- */
+@media (max-width: 500px) {
+  .BackToHome {
+    font-size: 13px;
+    padding: 24px 6% 0;
+  }
+  .Page {
+    padding: 12px 6% 40px;
+  }
+  .Hero {
+    padding-bottom: 24px;
+  }
+  .PageTitle {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 12px;
+  }
+  .SubTitle {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .Intro,
+  .SectionLead {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .Section {
+    padding: 24px 0;
+  }
+  .SectionTitle {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 14px;
+  }
+  .ContactCard {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .Badge {
+    font-size: 12px;
+    padding: 5px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+  }
+  .ContactGrid {
+    gap: 20px;
+  }
+  .ContactItem {
+    min-width: 100%;
+  }
+  .ContactLabel {
+    font-size: 11px;
+  }
+  .ContactItem a,
+  .Address {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .FlowNode {
+    max-width: 100%;
+    padding: 18px 18px;
+    border-radius: 10px;
+  }
+  .FlowStart {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .LevelTag {
+    font-size: 10px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+  .LevelName {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .LevelDesignation {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 8px;
+  }
+  .LevelDetails li {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 6px;
+  }
+  .RbiInlineLink {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  .ArrowNote {
+    font-size: 11px;
+  }
+  .ArrowLine {
+    height: 20px;
+  }
+  .ArrowHead {
+    font-size: 12px;
+  }
+  .Table {
+    min-width: 320px;
+  }
+  .Table th,
+  .Table td {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px 12px;
+  }
+  .Form,
+  .SuccessBox {
+    max-width: 100%;
+  }
+  .FormRow {
+    gap: 0;
+  }
+  .Field {
+    min-width: 100%;
+    margin-bottom: 16px;
+  }
+  .Field label {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  .Field input,
+  .Field select,
+  .Field textarea {
+    font-size: 14px;
+    padding: 11px 12px;
+    border-radius: 8px;
+  }
+  .Error {
+    font-size: 12px;
+  }
+  .SubmitError {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .SuccessNote {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  .CaptchaRow {
+    gap: 10px;
+  }
+  .CaptchaCode {
+    font-size: 22px;
+    letter-spacing: 6px;
+    padding: 8px 14px;
+    border-radius: 8px;
+  }
+  .CaptchaRefresh {
+    font-size: 16px;
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+  .CaptchaInput {
+    min-width: 100%;
+  }
+  .SubmitBtn {
+    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: 8px;
+  }
+  .SecondaryBtn {
+    font-size: 13px;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+  .SuccessBox {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .SuccessBox h3 {
+    font-size: 18px;
+  }
+  .SuccessBox p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .RbiBtn {
+    font-size: 14px;
+    padding: 12px 26px;
+    border-radius: 8px;
+  }
+}

@@ -1,0 +1,56 @@
+.CardsWrapper {
+  padding: 6% 6%;
+}
+
+.Cards {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 6.25vw;
+}
+
+.BottomContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7.813vw;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.281vw;
+  line-height: 3.047vw;
+  text-align: center;
+  color: #0b1642;
+}
+
+.Btn {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.281vw;
+  line-height: 3.047vw;
+  text-align: center;
+  color: #0b1642;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .CardsWrapper {
+    padding: 4% 0;
+  }
+
+  .Cards {
+    grid-row-gap: 15px;
+  }
+
+  .BottomContainer span {
+    display: none;
+  }
+
+  .BottomContainer {
+    padding: 15px;
+    font-size: 42px;
+    line-height: 60px;
+  }
+}

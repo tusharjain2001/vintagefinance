@@ -1,0 +1,56 @@
+.thanks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 20px 27px;
+  height: 100%;
+}
+
+.thanks img {
+  width: 198.98px;
+  height: 215px;
+  margin-bottom: 20px;
+}
+
+.h4 {
+  font-weight: 800;
+  font-size: 39px;
+  line-height: 30px;
+  text-align: center;
+  color: #030834;
+}
+
+.h5 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #030834;
+  opacity: 0.6;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 330px;
+}
+
+.btn {
+  background: #030834;
+  border-radius: 5px;
+  width: 176px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+@media (max-width: 500px) {
+  .thanks img {
+    width: 158px;
+    height: 148px;
+  }
+
+  .btn {
+    width: 160px;
+  }
+}

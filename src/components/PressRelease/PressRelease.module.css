@@ -1,0 +1,52 @@
+.Press {
+  padding: 6% 6%;
+}
+
+.H1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: -0.03em;
+  color: #0b1642;
+}
+
+.H6 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 31px;
+  letter-spacing: -0.02em;
+  color: #777e90;
+}
+
+.Cards {
+  display: grid;
+  margin-top: 76px;
+  grid-template-columns: auto auto;
+  grid-row-gap: 40px;
+}
+
+@media (max-width: 500px) {
+  .Press {
+    padding: 15% 6%;
+  }
+  .H1 {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.03em;
+    overflow-y: hidden;
+  }
+
+  .Cards {
+    grid-template-columns: auto;
+  }
+
+  .BtnsDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+  }
+}

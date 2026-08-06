@@ -1,0 +1,203 @@
+.Navbar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  align-items: center;
+}
+
+.FullNavbar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  transition: transform 0.3s ease-in;
+}
+
+.Navbar a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.094vw;
+  line-height: 1.25vw;
+  color: #777e91;
+  text-decoration: none;
+}
+
+.Navbar a:hover,
+.Navbar a:active {
+  color: #ffffff;
+}
+
+.Active {
+  color: #ffffff !important;
+}
+
+.Navbar h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.094vw;
+  line-height: 1.25vw;
+  color: #777e91;
+  text-transform: none;
+}
+
+.Navbar h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.094vw;
+  line-height: 1.25vw;
+  color: #777e91;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.instantBtn {
+  width: 19.766vw;
+  height: 3.984vw;
+  background: #b9f59d;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.078vw;
+  line-height: 1.641vw;
+  color: #0b1642;
+  cursor: pointer;
+}
+
+.Toggler {
+  display: none;
+}
+
+.Select {
+  height: 24.375vw;
+  width: 17.813vw;
+  background: #141416;
+  position: fixed;
+  top: 4.688vw;
+  margin-left: -3.516vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Select h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.172vw;
+  line-height: 1.406vw;
+  color: #ffffff;
+  width: 17.813vw;
+  height: 3.125vw;
+  padding: 2.344vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Select h5:hover {
+  background: #3c3f44;
+}
+
+.Hide {
+  display: none;
+}
+
+.Num {
+  border: 1px solid #b9f59d;
+  width: 15.078vw;
+  height: 3.984vw;
+  /* margin-right: 1.563vw; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Num span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.094vw;
+  line-height: 1.25vw;
+  color: #b9f59d;
+}
+
+.Num img {
+  width: 1.094vw;
+  height: 1.328vw;
+  margin-right: 0.391vw;
+}
+
+.NumAnchor {
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .FullNavbar {
+    /* display: none; */
+  }
+
+  .Toggler {
+    display: block;
+    margin-left: auto;
+  }
+
+  .Toggler img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  .FullNavbar {
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    background-color: #000;
+    margin-left: -6%;
+    padding: 8% 6%;
+    overflow-y: scroll;
+    height: 830px;
+    z-index: 20;
+    justify-content: flex-start;
+  }
+
+  .Navbar {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .Navbar a {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 47px;
+  }
+
+  .Navbar h3 {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 47px;
+    width: 88vw;
+    max-width: 450px;
+  }
+
+  .Navbar h2 {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 47px;
+  }
+
+  .instantBtn {
+    width: 299px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.05em;
+    margin-right: auto;
+    margin-left: 0;
+    height: 45px;
+  }
+
+  .Select {
+    top: 160px;
+  }
+}

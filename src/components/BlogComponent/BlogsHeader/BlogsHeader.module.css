@@ -1,0 +1,78 @@
+.BlogsHeader {
+  background-image: url("../../../assets/images/blogs/mask-group-1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 42.031vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.BlogsHeader h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 6.094vw;
+  line-height: 7.109vw;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  text-shadow: 0px 0px 44px rgba(0, 0, 0, 0.7);
+}
+
+.BtnWrapper {
+  display: flex;
+  margin-top: 1.563vw;
+}
+
+.BtnG {
+  width: 19.922vw;
+  height: 3.984vw;
+  background: #b9f59d;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-size: 1.094vw;
+  line-height: 1.641vw;
+  color: #0b1642;
+  margin-right: 15px;
+}
+
+.BtnD {
+  width: 19.766vw;
+  height: 3.984vw;
+  background: linear-gradient(94.47deg, #e4e2c7 46.38%, #c3deea 97.4%);
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-size: 1.094vw;
+  line-height: 1.641vw;
+  color: #141416;
+}
+
+@media (max-width: 500px) {
+  .BlogsHeader {
+    background-image: url("../../../assets/images/blogs/mask-group-2.webp");
+    height: 349px;
+  }
+
+  .BlogsHeader h1 {
+    font-size: 45px;
+    line-height: 60px;
+    text-shadow: 0px 0px 17.7313px rgba(0, 0, 0, 0.7);
+  }
+
+  .BtnWrapper {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .BtnG,
+  .BtnD {
+    width: 253px;
+    height: 48px;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 30px;
+  }
+}

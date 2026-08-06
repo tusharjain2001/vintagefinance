@@ -1,0 +1,214 @@
+.Privilege {
+  /* background-image: url("../../assets/images/section-3/bg/privilege-bg.webp"); */
+  background-image: url("../../assets/images/section-3/best/group-15551.svg");
+  background-size: cover;
+  padding: 6% 6%;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 6.25vw;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.SmallColumn {
+  display: grid;
+  grid-template-columns: auto auto;
+  flex-basis: 100%;
+  flex: 1;
+  flex-wrap: wrap;
+  margin-top: -3.125vw;
+}
+
+.SmallColumn div {
+  width: 21.875vw;
+  height: 17.969vw;
+}
+
+.Card {
+  background: #ffffff;
+  border: 1px solid #f9e5e2;
+  box-sizing: border-box;
+  border-radius: 1.787vw;
+  width: 27.5vw;
+  height: 42.5vw;
+}
+
+.Upper {
+  padding: 4.141vw 3.125vw;
+}
+
+.H4 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.813vw;
+  line-height: 3.828vw;
+  color: #050f29;
+}
+
+.H5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.563vw;
+  line-height: 2.109vw;
+  font-feature-settings: "ss02" on;
+  color: #0c1c49;
+  opacity: 0.9;
+  margin-top: 2.344vw;
+}
+
+.BtnDiv {
+  position: relative;
+  bottom: -1.5vw;
+  left: -0.078vw;
+}
+
+.Card .Btn {
+  width: 27.5vw;
+  height: 8.672vw;
+  background: #030317;
+  border: none;
+  border-bottom-left-radius: 1.787vw;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.563vw;
+  line-height: 1.797vw;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 1.787vw;
+}
+
+.BestImg {
+  width: 7.813vw;
+  height: 7.813vw;
+}
+
+.H3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 4.063vw;
+  line-height: 4.688vw;
+  letter-spacing: -0.02em;
+  /* color: #ffffff; */
+  background: linear-gradient(
+    89.78deg,
+    #bef2ed -1.05%,
+    #c2f0eb 18.3%,
+    #c6e8f0 38.14%,
+    #d8e3de 57.98%,
+    #8ec3fb 77.34%,
+    #b9d6fd 91.85%
+  );
+  background-size: 100%;
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.H6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.406vw;
+  line-height: 2.109vw;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.P {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25vw;
+  line-height: 1.719vw;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+  .H3 {
+    overflow-y: hidden;
+    font-size: 52px;
+    line-height: 60px;
+    width: 78%;
+  }
+
+  .Row {
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+
+  .Card {
+    overflow-y: hidden;
+    width: 256.96px;
+    height: 396px;
+    border: none;
+  }
+
+  .H4 {
+    font-size: 26.2059px;
+    line-height: 36px;
+  }
+
+  .H5 {
+    font-size: 14.5588px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+
+  .Upper {
+    padding: 38px 29px;
+  }
+
+  .SmallColumn {
+    margin-top: 60px;
+  }
+
+  .SmallColumn div {
+    height: 100%;
+    flex: 50% 1;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .Mb {
+    display: none;
+  }
+
+  .BestImg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .H6 {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .P {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .BtnDiv {
+    left: 0px;
+    bottom: 0;
+  }
+
+  .Card .Btn {
+    width: 100%;
+    height: 80px;
+    font-size: 14.5588px;
+    line-height: 17px;
+  }
+}

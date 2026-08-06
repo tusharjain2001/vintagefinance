@@ -1,0 +1,115 @@
+.container {
+  background: linear-gradient(
+    135deg,
+    rgba(31, 43, 112, 0.9),
+    rgba(31, 43, 112, 0.9) 47%,
+    rgba(148, 58, 158, 0.9)
+  );
+  padding: 9% 6%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.7fr 0.4fr;
+  gap: 3.125vw;
+}
+
+.upper {
+  color: #fff;
+}
+
+.upper h2 {
+  font-weight: 700;
+  font-size: 2.813vw;
+  line-height: 3.438vw;
+}
+
+.upper p {
+  font-weight: 400;
+  font-size: 1.719vw;
+  line-height: 2.344vw;
+  margin-top: 1.25vw;
+  margin-bottom: 1.25vw;
+}
+
+.list {
+  padding-left: 1.719vw;
+}
+
+.list li {
+  margin-bottom: 4px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.406vw;
+  line-height: 2.188vw;
+}
+
+.list li span {
+  font-weight: 800;
+}
+
+.p {
+  font-weight: 400;
+  font-size: 1.406vw;
+  line-height: 2.188vw;
+  color: #fff;
+}
+
+.right {
+  padding: 4.688vw 1.875vw;
+  background-color: #fff;
+  border-radius: 0.625vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: 1.8vw;
+  line-height: 2.3vw;
+  color: #151e28;
+}
+
+.right svg path {
+  fill: #000;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 50px 6%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upper h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .upper p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .list li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .right {
+    padding: 40px 20px;
+  }
+
+  .h2 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

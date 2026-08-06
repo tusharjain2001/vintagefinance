@@ -1,0 +1,12 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^vintagefinance.in
+RewriteRule (.*) https://www.vintagefinance.in/$1 [R=301,L]
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</IfModule>
+
+
