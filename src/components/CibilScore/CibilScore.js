@@ -6,7 +6,7 @@ import classes from "./CibilScore.module.css";
 import * as Yup from "yup";
 import LoadingComponent from "../LoadingComponent/LoadingComponent";
 import axios from "../../axiosinstance";
-import moment from "moment";
+import { formatDate, formatISO } from "../../utils/date";
 
 let personalLoan =
   "/images/section-1/per-loan.webp";
@@ -25,7 +25,12 @@ const CibilScore = ({ setToast }) => {
       <Helmet>
         <link rel="canonical" href="https://www.vintagefinance.in/" />
       </Helmet>
-      <div className={classes.Cibil}>
+      <div
+        className={classes.Cibil}
+        style={{
+          backgroundImage: "url(/images/section-5/bg/background.webp)",
+        }}
+      >
         <div className={classes.Row}>
           <div className={classes.DoubleColumn}>
             <h1 className={classes.H1}>
@@ -43,9 +48,9 @@ const CibilScore = ({ setToast }) => {
               initialValues={{
                 phone: "",
                 id: "AV" + Date.now(),
-                enquiryDate: moment().format("YYYY-MM-DD"),
-                createdAt: moment().format(),
-                updatedAt: moment().format(),
+                enquiryDate: formatDate(),
+                createdAt: formatISO(),
+                updatedAt: formatISO(),
               }}
               validationSchema={validate}
               onSubmit={async (values, { setSubmitting, resetForm }) => {

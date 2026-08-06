@@ -1,36 +1,23 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import Helmet from "react-helmet";
 import CibilScore from "../../components/CibilScore/CibilScore";
-
-import AboutUs from "../../components/AboutUs/AboutUs";
-import ApplyLoanCard from "../../components/ApplyLoanCard/ApplyLoanCard";
-import Faq from "../../components/Faq/Faq";
-import Numbers from "../../components/Numbers/Numbers";
 import PersonalLoan from "../../components/PersonalLoan/PersonalLoan";
-//import PressRelease from "../../components/PressRelease/PressRelease";
-import PrivilegeLoan from "../../components/PrivilegeLoan/PrivilegeLoan";
-import Rating from "../../components/Rating/Rating";
-import StepsForInstantLoan from "../../components/StepsForInstantLoan/StepsForInstantLoan";
 
-// const AboutUs = lazy(() => import("../../components/AboutUs/AboutUs"));
-// const ApplyLoanCard = lazy(() =>
-//   import("../../components/ApplyLoanCard/ApplyLoanCard")
-// );
-// const Faq = lazy(() => import("../../components/Faq/Faq"));
-// const Numbers = lazy(() => import("../../components/Numbers/Numbers"));
-// const PersonalLoan = lazy(() =>
-//   import("../../components/PersonalLoan/PersonalLoan")
-// );
-// // const PressRelease = lazy(() =>
-// //   import("../../components/PressRelease/PressRelease")
-// // );
-// const PrivilegeLoan = lazy(() =>
-//   import("../../components/PrivilegeLoan/PrivilegeLoan")
-// );
-// const Rating = lazy(() => import("../../components/Rating/Rating"));
-// const StepsForInstantLoan = lazy(() =>
-//   import("../../components/StepsForInstantLoan/StepsForInstantLoan")
-// );
+// Below-the-fold sections load as separate chunks to keep the initial
+// JavaScript bundle small (mobile performance).
+const AboutUs = lazy(() => import("../../components/AboutUs/AboutUs"));
+const ApplyLoanCard = lazy(() =>
+  import("../../components/ApplyLoanCard/ApplyLoanCard")
+);
+const Faq = lazy(() => import("../../components/Faq/Faq"));
+const Numbers = lazy(() => import("../../components/Numbers/Numbers"));
+const PrivilegeLoan = lazy(() =>
+  import("../../components/PrivilegeLoan/PrivilegeLoan")
+);
+const Rating = lazy(() => import("../../components/Rating/Rating"));
+const StepsForInstantLoan = lazy(() =>
+  import("../../components/StepsForInstantLoan/StepsForInstantLoan")
+);
 
 const Home = ({ mobile, open, setToast }) => {
   //let fallback = "Loading...";
@@ -56,14 +43,16 @@ const Home = ({ mobile, open, setToast }) => {
         <CibilScore setToast={setToast} />
 
         <PersonalLoan open={open} />
-        <PrivilegeLoan open={open} />
-        <StepsForInstantLoan open={open} />
-        <Numbers open={open} />
-        <Rating mobile={mobile} open={open} />
-        <AboutUs open={open} />
-        {/* <PressRelease /> */}
-        <ApplyLoanCard open={open} />
-        <Faq mt={{ marginTop: 60 }} />
+        <Suspense fallback={null}>
+          <PrivilegeLoan open={open} />
+          <StepsForInstantLoan open={open} />
+          <Numbers open={open} />
+          <Rating mobile={mobile} open={open} />
+          <AboutUs open={open} />
+          {/* <PressRelease /> */}
+          <ApplyLoanCard open={open} />
+          <Faq mt={{ marginTop: 60 }} />
+        </Suspense>
       </div>
     </>
   );

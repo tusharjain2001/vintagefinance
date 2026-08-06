@@ -10,7 +10,7 @@ import * as Yup from "yup";
 import LoadingComponent from "../LoadingComponent/LoadingComponent";
 import axios from "../../axiosinstance";
 import { useHistory } from "react-router-dom";
-import moment from "moment";
+import { formatDate, formatISO } from "../../utils/date";
 import {
   aboutUs,
   blog,
@@ -236,9 +236,9 @@ const Footer = ({ setToast, setPolicy }) => {
             initialValues={{
               phone: "",
               id: "AV" + Date.now(),
-              enquiryDate: moment().format("YYYY-MM-DD"),
-              createdAt: moment().format(),
-              updatedAt: moment().format(),
+              enquiryDate: formatDate(),
+              createdAt: formatISO(),
+              updatedAt: formatISO(),
             }}
             validationSchema={validate}
             onSubmit={async (values, { setSubmitting, resetForm }) => {

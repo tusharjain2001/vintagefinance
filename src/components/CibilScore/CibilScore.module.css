@@ -1,8 +1,7 @@
 .Cibil {
   padding: 1% 0% 0% 6%;
-  /* background-image: url("../../assets/images/section-1/group-15115-min.webp"); */
-
-  background-image: url("../../assets/images/section-5/bg/background.webp");
+  /* background image set inline in CibilScore.js from /images (public) so it
+     can be preloaded in index.html - it is the mobile LCP element */
   background-size: cover;
 }
 

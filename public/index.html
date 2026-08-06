@@ -30,6 +30,11 @@
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/section-5/bg/background.webp"
+    />
     <link rel="preload" as="image" href="/images/section-1/per-loan.webp" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
@@ -54,23 +59,38 @@
       href="/images/section-7/about/istock-1209431211-2.webp"
     /> -->
 
-    <!-- Google tag (gtag.js) - loaded once for Analytics + Ads -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-6Y5VG1HKSF"
-    ></script>
+    <!-- Google tag (gtag.js) - Analytics + Ads, loaded after first user
+         interaction (or 3.5s after load) so it does not block page rendering.
+         Events fired before the script loads are queued in dataLayer. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-      gtag("config", "UA-172772840-1");
       gtag("config", "G-6Y5VG1HKSF");
       gtag("config", "AW-10868078513");
       gtag("config", "AW-10868078513/ksN3CICA2PADELHvpr4o", {
         phone_conversion_number: "+91 9560462463",
       });
+      (function () {
+        var done = false;
+        var events = ["scroll", "click", "touchstart", "keydown"];
+        function loadGtag() {
+          if (done) return;
+          done = true;
+          var s = document.createElement("script");
+          s.async = true;
+          s.src = "https://www.googletagmanager.com/gtag/js?id=G-6Y5VG1HKSF";
+          document.head.appendChild(s);
+        }
+        events.forEach(function (e) {
+          window.addEventListener(e, loadGtag, { passive: true, once: true });
+        });
+        window.addEventListener("load", function () {
+          setTimeout(loadGtag, 3500);
+        });
+      })();
     </script>
 
     <script type="application/ld+json">
