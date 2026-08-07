@@ -3,7 +3,7 @@ import classes from "./Numbers.module.css";
 
 const Numbers = ({ open }) => {
   return (
-    <div className={classes.NumbersBg}>
+    <div className={`${classes.NumbersBg} numbers-bg`}>
       <div>
         <h4 className={classes.H4}>
           Our numbers tell

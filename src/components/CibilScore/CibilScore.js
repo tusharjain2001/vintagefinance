@@ -25,12 +25,7 @@ const CibilScore = ({ setToast }) => {
       <Helmet>
         <link rel="canonical" href="https://www.vintagefinance.in/" />
       </Helmet>
-      <div
-        className={classes.Cibil}
-        style={{
-          backgroundImage: "url(/images/section-5/bg/background.webp)",
-        }}
-      >
+      <div className={`${classes.Cibil} hero-bg`}>
         <div className={classes.Row}>
           <div className={classes.DoubleColumn}>
             <h1 className={classes.H1}>

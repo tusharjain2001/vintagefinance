@@ -1,6 +1,8 @@
 .NumbersBg {
   /* background: url("../../assets/images/section-1/group-15115-min.webp"); */
-  background: url("../../assets/images/section-5/bg/background.webp");
+  /* background-image comes from the global .numbers-bg class in index.html, the
+     same one the hero uses, so this section reuses that download instead of
+     pulling a second hashed copy of the identical file. */
   background-size: cover;
   background-repeat: no-repeat;
   padding: 6% 6%;
@@ -70,7 +72,6 @@
 @media (max-width: 500px) {
   .NumbersBg {
     padding: 15% 6%;
-    background-image: url("../../assets/images/section-5/bg/background.webp");
   }
 
   .NumData span {

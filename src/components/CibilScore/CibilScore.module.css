@@ -1,8 +1,11 @@
 .Cibil {
   padding: 1% 0% 0% 6%;
-  /* background image set inline in CibilScore.js from /images (public) so it
-     can be preloaded in index.html - it is the mobile LCP element */
   background-size: cover;
+  /* background-image lives on the global .hero-bg class, declared inline in
+     index.html. This div is the mobile LCP element, and a rule in the document
+     itself is discoverable before any stylesheet arrives. Keeping the URL out
+     of webpack also means it stays stable and shared with .numbers-bg, which
+     uses the same file - see the comment in index.html. */
 }
 
 .Row {
@@ -87,9 +90,6 @@
 }
 
 @media (max-width: 500px) {
-  .Cibil {
-    background-image: url("../../assets/images/section-5/bg/background.webp");
-  }
   .DoubleColumn {
     flex: 1;
   }

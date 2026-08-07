@@ -168,6 +168,12 @@ function App() {
 
   const [policy, setPolicy] = useState(0);
   let fallback = <LoadingComponent text="Loading..." />;
+  // NB: routes below pass inline arrows via `render`, not `component`. Router
+  // calls createElement() on `component`, so an inline arrow - a new function
+  // identity every render - makes React treat it as a different component type
+  // and remount the whole subtree. getDimensions() setting `mobile` on mount was
+  // enough to destroy and rebuild the prerendered homepage, which reset the LCP
+  // clock to ~5s. `render` invokes the function instead, so the tree is reused.
   return (
     <>
       <Helmet>
@@ -215,7 +221,7 @@ function App() {
             <Route
               exact
               path="/"
-              component={() => (
+              render={() => (
                 <Home
                   mobile={mobile}
                   close={closeLoanModal}
@@ -230,31 +236,31 @@ function App() {
               <Route
                 exact
                 path={dsaSignup}
-                component={() => (
+                render={() => (
                   <Dsa setToast={setToast} open={openLoanModal} />
                 )}
               />
               <Route
                 exact
                 path={aboutUs}
-                component={() => <About open={openLoanModal} />}
+                render={() => <About open={openLoanModal} />}
               />
               <Route exact path={faqPage} component={Faqs} />
               {/* <Route
                 exact
                 path={`${blog}/page/:id`}
-                component={() => <Blogs />}
+                render={() => <Blogs />}
               /> */}
 
               {/* <Route
                 exact
                 path={blog}
-                component={() => <News open={openLoanModal} />}
+                render={() => <News open={openLoanModal} />}
               />
               <Route
                 exact
                 path={`${blog}/:id/:slug`}
-                component={() => <BlogItem />}
+                render={() => <BlogItem />}
               /> */}
 
               <Route exact path={services} component={ServicesPage} />
@@ -262,7 +268,7 @@ function App() {
               <Route
                 exact
                 path="/personal-loan-providers-delhi"
-                component={() => (
+                render={() => (
                   <Emi
                     open={openLoanModal}
                     mobile={mobile}
@@ -274,94 +280,94 @@ function App() {
               <Route
                 exact
                 path={privacyPolicy}
-                component={() => <Policy policy={policy} mobile={mobile} />}
+                render={() => <Policy policy={policy} mobile={mobile} />}
               />
               <Route
                 exact
                 path={disclaimer}
-                component={() => <Policy policy={policy} />}
+                render={() => <Policy policy={policy} />}
               />
               {/* <Route
                 exact
                 path={homeLoan}
-                component={() => (
+                render={() => (
                   <HomeLoan mobile={mobile} open={openLoanModal} />
                 )}
               /> */}
               <Route
                 exact
                 path={loanAgainstProperty}
-                component={() => (
+                render={() => (
                   <LoanAgainstProperty mobile={mobile} open={openLoanModal} />
                 )}
               />
               <Route
                 exact
                 path={personalLoan}
-                component={() => (
+                render={() => (
                   <PersonalLoan mobile={mobile} open={openLoanModal} />
                 )}
               />
               <Route
                 exact
                 path={earlySalaryLoan}
-                component={() => (
+                render={() => (
                   <EarlySalaryLoan mobile={mobile} open={openLoanModal} />
                 )}
               />
               <Route
                 exact
                 path={twoWheelerLoan}
-                component={() => (
+                render={() => (
                   <TwoWheelerLoan mobile={mobile} open={openLoanModal} />
                 )}
               />
               <Route
                 exact
                 path={loanInGurgaon}
-                component={() => (
+                render={() => (
                   <LoanInGurgaon mobile={mobile} open={openLoanModal} />
                 )}
               />
               <Route
                 exact
                 path={loanInGhaziabad}
-                component={() => (
+                render={() => (
                   <LoanInGhaziabad mobile={mobile} open={openLoanModal} />
                 )}
               />
               <Route
                 exact
                 path={loanInNoida}
-                component={() => (
+                render={() => (
                   <LoanInNoida mobile={mobile} open={openLoanModal} />
                 )}
               />
               <Route
                 exact
                 path={cibilDefaulter}
-                component={() => (
+                render={() => (
                   <LoanForCibilDefaulter mobile={mobile} open={openLoanModal} />
                 )}
               />
               {/* <Route
                 exact
                 path={autoLoan}
-                component={() => (
+                render={() => (
                   <AutoLoan mobile={mobile} open={openLoanModal} />
                 )}
               /> */}
               <Route
                 exact
                 path={privateLoan}
-                component={() => (
+                render={() => (
                   <PrivateLoan mobile={mobile} open={openLoanModal} />
                 )}
               />
               <Route
                 exact
                 path={sitemap}
-                component={() => (
+                render={() => (
                   <Sitemap mobile={mobile} open={openLoanModal} />
                 )}
               />

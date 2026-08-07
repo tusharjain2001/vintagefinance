@@ -28,10 +28,24 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- The hero div's background is the mobile LCP element. It is a CSS
+         background, so it is only discoverable once the stylesheet has parsed -
+         these preloads start it immediately instead, and fetchpriority="high"
+         stops it queueing behind the other hero art. Scoped by media so a phone
+         never downloads the desktop copy. -->
+    <link
+      rel="preload"
+      as="image"
+      href="/images/section-5/bg/background-mobile.webp"
+      media="(max-width: 500px)"
+      fetchpriority="high"
+    />
     <link
       rel="preload"
       as="image"
       href="/images/section-5/bg/background.webp"
+      media="(min-width: 501px)"
+      fetchpriority="high"
     />
     <link rel="preload" as="image" href="/images/section-1/per-loan.webp" />
 
@@ -74,6 +88,29 @@
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
           U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
           U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* Hero (.hero-bg, the mobile LCP element) and the Numbers strip further
+         down the homepage share one piece of artwork. These rules live here
+         rather than in the CSS modules for two reasons: the URL stays stable
+         and unhashed, so the preloads above can name the exact file that will
+         be used; and both consumers resolve to the same URL, so the browser
+         downloads it once. Previously the hero used a public path while Numbers
+         imported the asset, producing two hashed URLs and 335 KB of transfer
+         for a single image.
+
+         The artwork is a soft gradient with no fine detail, so the 480px-wide
+         copy upscales under background-size:cover indistinguishably from the
+         1764px original, at 15% of the bytes. */
+      .hero-bg,
+      .numbers-bg {
+        background-image: url(/images/section-5/bg/background.webp);
+      }
+      @media (max-width: 500px) {
+        .hero-bg,
+        .numbers-bg {
+          background-image: url(/images/section-5/bg/background-mobile.webp);
+        }
       }
     </style>
     <!-- <link
