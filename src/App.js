@@ -8,6 +8,9 @@ import Helmet from "react-helmet";
 import Home from "./pages/Home/Home";
 import LoadingComponent from "./components/LoadingComponent/LoadingComponent";
 import Emi from "./pages/Emi/Emi";
+// Rendered on every route, so lazy() only bought an extra round trip on the
+// critical path - webpack injected its chunk into <head> during the prerender.
+import Footer from "./components/Footer/Footer";
 
 //import BlogItem from "./components/BlogComponent/BlogItem/BlogItem";
 //import { PostIdProvider } from "./components/PostIdContext/PostIdContext";
@@ -47,7 +50,6 @@ const LoanApplication = lazy(() =>
   import("./components/LoanApplication/LoanApplication")
 );
 const Policy = lazy(() => import("./components/Policy/Policy"));
-const Footer = lazy(() => import("./components/Footer/Footer"));
 //const HomeLoan = lazy(() => import("./components/LoanTypes/HomeLoan/HomeLoan"));
 const LoanAgainstProperty = lazy(() =>
   import("./components/LoanTypes/LoanAgainstProperty/LoanAgainstProperty")
@@ -371,9 +373,7 @@ function App() {
             </Suspense>
           </Switch>
         </div>
-        <Suspense fallback={fallback}>
-          <Footer setToast={setToast} setPolicy={setPolicy} />
-        </Suspense>
+        <Footer setToast={setToast} setPolicy={setPolicy} />
       </BrowserRouter>
     </>
   );
