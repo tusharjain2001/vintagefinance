@@ -131,9 +131,12 @@
       href="/images/section-7/about/istock-1209431211-2.webp"
     /> -->
 
-    <!-- Google tag (gtag.js) - Analytics + Ads, loaded after first user
-         interaction (or 3.5s after load) so it does not block page rendering.
-         Events fired before the script loads are queued in dataLayer. -->
+    <!-- Google Tag Manager (GTM-KX8QJ63F) + Google tag (gtag.js) - Analytics
+         + Ads, loaded after the first user interaction (or 3.5s after load)
+         so they never compete with page rendering. This keeps the PageSpeed
+         score intact: dataLayer exists from the start, so every event fired
+         before the scripts arrive is queued and delivered once they load.
+         Nothing is lost - GTM just starts a moment later. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -148,19 +151,29 @@
       (function () {
         var done = false;
         var events = ["scroll", "click", "touchstart", "keydown"];
-        function loadGtag() {
+        function loadTags() {
           if (done) return;
           done = true;
+          // Google Tag Manager
+          window.dataLayer.push({
+            "gtm.start": new Date().getTime(),
+            event: "gtm.js",
+          });
+          var g = document.createElement("script");
+          g.async = true;
+          g.src = "https://www.googletagmanager.com/gtm.js?id=GTM-KX8QJ63F";
+          document.head.appendChild(g);
+          // Google tag (gtag.js)
           var s = document.createElement("script");
           s.async = true;
           s.src = "https://www.googletagmanager.com/gtag/js?id=G-6Y5VG1HKSF";
           document.head.appendChild(s);
         }
         events.forEach(function (e) {
-          window.addEventListener(e, loadGtag, { passive: true, once: true });
+          window.addEventListener(e, loadTags, { passive: true, once: true });
         });
         window.addEventListener("load", function () {
-          setTimeout(loadGtag, 3500);
+          setTimeout(loadTags, 3500);
         });
       })();
     </script>
@@ -212,6 +225,16 @@
     <title>Vintage Finance</title>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KX8QJ63F"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
