@@ -1,5 +1,44 @@
 User-agent: *
-Disallow: 
+Allow: /
+
+# Block application and user-specific areas
+Disallow: /apply/
+Disallow: /application/
+Disallow: /login/
+Disallow: /register/
+Disallow: /thank-you/
+Disallow: /thankyou/
+
+# Block system/private files
+Disallow: /admin/
 Disallow: /cgi-bin/
+Disallow: /includes/
+Disallow: /private/
+
+# Allow important SEO resources
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# AI/Search crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
 
 Sitemap: https://www.vintagefinance.in/sitemap.xml
