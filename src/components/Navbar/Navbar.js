@@ -175,10 +175,10 @@ const Navbar = ({ open, close, mobile, number, dialog, setDialog }) => {
             >
               Complaints
             </NavLink>
-            <a href="tel:+91 9560462463" className={classes.NumAnchor}>
+            <a href="tel:+91 9899055381" className={classes.NumAnchor}>
               <div className={classes.Num}>
                 <img src={mob} alt="phone" />
-                <span>+91 9560462463</span>
+                <span>+91 9899055381</span>
               </div>
             </a>
           </div>

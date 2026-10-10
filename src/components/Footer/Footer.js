@@ -97,7 +97,7 @@ const Footer = ({ setToast, setPolicy }) => {
                 Telephone
               </li>
               
-              <li className={classes.UlLi}>+91 95604 62463</li>
+              <li className={classes.UlLi}>+91 98990 55381</li>
               <li className={classes.UlLi}>+91 99995 54728</li>
             </ul>
             <ul>

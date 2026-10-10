@@ -37,7 +37,7 @@ const FixedWeb = ({ phone }) => {
 };
 
 FixedWeb.defaultProps = {
-  phone: "9560462463",
+  phone: "9899055381",
 };
 
 export default FixedWeb;

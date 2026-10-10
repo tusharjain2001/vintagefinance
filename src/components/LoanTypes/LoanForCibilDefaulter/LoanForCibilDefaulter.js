@@ -13,13 +13,13 @@ const LoanForCibilDefaulter = ({ mobile, open }) => {
     <>
       <Helmet>
         <title>
-          Personal Loan For CIBIL Defaulters in Delhi - Vintage Finance
+          Personal Loan for CIBIL Defaulters &amp; Low CIBIL Score in Delhi NCR | Bad CIBIL Loan
         </title>
         <link rel="canonical" href="https://www.vintagefinance.in/personal-loan-low-cibil-defaulter-delhi.html"/>
 
         <meta
           name="description"
-          content="Personal loan for cibil defaulter in delhi NCR. Vintage finance offers personal loan without cibil check at attractive interest rate. Apply now!"
+          content="Explore loans for low CIBIL score, bad CIBIL, CIBIL defaulters and bad credit in Delhi NCR. Options for salaried borrowers, urgent loans and loans without CIBIL verification."
         />
         <meta
           name="keywords"
