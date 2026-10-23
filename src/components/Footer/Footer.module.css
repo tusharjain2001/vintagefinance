@@ -1,5 +1,5 @@
 .Footer {
-  padding: 5% 6%;
+  padding: 3% 6% 1.5%;
   background: #141416;
 }
 
@@ -8,9 +8,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding-top: 6.25vw;
-
-  padding-bottom: 15.625vw;
+  padding-bottom: 2.5vw;
 }
 
 .Column {
@@ -29,11 +27,11 @@
 }
 
 .Column li {
-  margin-top: 1.172vw;
+  margin-top: 0.55vw;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.25vw;
-  line-height: 1.875vw;
+  font-size: max(12px, 1.1vw);
+  line-height: max(18px, 1.6vw);
   letter-spacing: -0.528px;
   color: #777e90;
   cursor: pointer;
@@ -42,11 +40,11 @@
 .H3 {
   font-style: normal;
   font-weight: bold;
-  font-size: 1.25vw;
-  line-height: 1.875vw;
+  font-size: max(13px, 1.15vw);
+  line-height: max(19px, 1.6vw);
   letter-spacing: -0.528px;
   color: #ffffff;
-  margin-bottom: 1.719vw;
+  margin-bottom: 0.9vw;
 }
 
 .BorderBottom {
@@ -63,8 +61,8 @@
 .P {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.25vw;
-  line-height: 1.641vw;
+  font-size: max(12px, 1.1vw);
+  line-height: max(16px, 1.5vw);
   letter-spacing: -0.528px;
   color: #777e90;
   margin-right: 10px;
@@ -88,7 +86,7 @@
 
 .UlDiv {
   margin-left: 2.5vw;
-  margin-top: 1.563vw;
+  margin-top: 0.9vw;
 }
 
 .UlHeading {
@@ -100,8 +98,8 @@
 }
 
 .Ul {
-  margin-top: 2.344vw;
-  margin-bottom: 2.344vw;
+  margin-top: 1.2vw;
+  margin-bottom: 1.2vw;
 }
 
 .Inp {
@@ -125,8 +123,8 @@
 .H6 {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.406vw;
-  line-height: 1.875vw;
+  font-size: max(12px, 1.2vw);
+  line-height: max(18px, 1.6vw);
   display: flex;
   align-items: center;
   letter-spacing: 0.05em;
@@ -150,11 +148,11 @@
 @media (max-width: 500px) {
   .Row {
     flex-direction: column;
-    padding-bottom: 80px;
+    padding-bottom: 28px;
   }
 
   .H3 {
-    margin-top: 60px;
+    margin-top: 28px;
     margin-bottom: 0;
     font-size: 16px;
     line-height: 24px;
@@ -181,7 +179,7 @@
   .FMb {
     padding: 0 !important;
     flex-direction: column !important;
-    padding-bottom: 120px !important;
+    padding-bottom: 88px !important;
     align-items: flex-start !important;
   }
 

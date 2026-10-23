@@ -54,8 +54,18 @@ const Policy = lazy(() => import("./components/Policy/Policy"));
 const LoanAgainstProperty = lazy(() =>
   import("./components/LoanTypes/LoanAgainstProperty/LoanAgainstProperty")
 );
-const PersonalLoan = lazy(() =>
-  import("./components/LoanTypes/PersonalLoan/PersonalLoan")
+// The chunk names are matched by scripts/optimize-html.js, which keeps these
+// pages' stylesheets render-blocking: their CSS is all above the fold.
+const DelhiPage = lazy(() =>
+  import(
+    /* webpackChunkName: "lp-delhi" */ "./pages/CityLoans/Delhi/DelhiPage"
+  )
+);
+const GurgaonPage = lazy(() =>
+  import(/* webpackChunkName: "lp-gurgaon" */ "./pages/CityLoans/Gurgaon/GurgaonPage")
+);
+const NoidaPage = lazy(() =>
+  import(/* webpackChunkName: "lp-noida" */ "./pages/CityLoans/Noida/NoidaPage")
 );
 const EarlySalaryLoan = lazy(() =>
   import("./components/LoanTypes/EarlySalaryLoan/EarlySalaryLoan")
@@ -63,14 +73,8 @@ const EarlySalaryLoan = lazy(() =>
 const TwoWheelerLoan = lazy(() =>
   import("./components/LoanTypes/TwoWheelerLoan/TwoWheelerLoan")
 );
-const LoanInGurgaon = lazy(() =>
-  import("./components/LoanTypes/LoanInGurgaon/LoanInGurgaon")
-);
 const LoanInGhaziabad = lazy(() =>
   import("./components/LoanTypes/LoanInGhaziabad/LoanInGhaziabad")
-);
-const LoanInNoida = lazy(() =>
-  import("./components/LoanTypes/LoanInNoida/LoanInNoida")
 );
 const LoanForCibilDefaulter = lazy(() =>
   import("./components/LoanTypes/LoanForCibilDefaulter/LoanForCibilDefaulter")
@@ -101,8 +105,8 @@ export const privateLoan =
 
 export const loanAgainstProperty = "/loan-against-property-delhi.html";
 export const cibilDefaulter = "/personal-loan-low-cibil-defaulter-delhi.html";
-export const loanInGurgaon = "/personal-loan-gurgaon.html";
-export const loanInNoida = "/personal-loan-noida.html";
+export const loanInGurgaon = "/personal-loan-low-cibil-defaulter-gurgaon.html";
+export const loanInNoida = "/personal-loan-low-cibil-defaulter-noida.html";
 export const dsaSignup = "/dsa-signup.php";
 export const blog = "http://blog.vintagefinance.in";
 export const contactUs = "/contact_us.html";
@@ -112,11 +116,32 @@ export const disclaimer = "/disclaimer.html";
 export const twoWheelerLoan = "/two-wheeler-loan.html";
 //export const homeLoan = "/home-loan.html";
 export const earlySalaryLoan = "/early-salary-loan.html";
-export const loanInGhaziabad = "/personal-loan-ghaziabad.html";
+export const loanInGhaziabad = "/personal-loan-low-cibil-defaulter-ghaziabad.html";
 export const sitemap = "/sitemap.html";
 export const faqPage = "/faq.html";
 export const services = "/services.html";
 export const grievanceRedressal = "/grievance-redressal.html";
+export const loan40kSalary = "/personal-loan-40000-salary.html";
+export const loanAfterCibilSettlement = "/loan-after-cibil-settlement.html";
+export const loanWithMultipleEmis = "/personal-loan-multiple-existing-emis.html";
+export const loanWithWrittenOffAccount = "/loan-with-written-off-account.html";
+export const loanAfterBankRejection = "/personal-loan-after-bank-rejection.html";
+export const lowCibilDefaulterFaridabad = "/personal-loan-low-cibil-defaulter-faridabad.html";
+export const lowCibilDefaulterGreaterNoida =
+  "/personal-loan-low-cibil-defaulter-greater-noida.html";
+
+// Pages built on the Gurgaon design. They show the Gurgaon page's content
+// until their own arrives.
+const gurgaonDesignPages = [
+  loanInGurgaon,
+  loan40kSalary,
+  loanAfterCibilSettlement,
+  loanWithMultipleEmis,
+  loanWithWrittenOffAccount,
+  loanAfterBankRejection,
+  lowCibilDefaulterFaridabad,
+  lowCibilDefaulterGreaterNoida,
+];
 
 function App() {
   const [mobile, setMobile] = useState(false);
@@ -304,9 +329,7 @@ function App() {
               <Route
                 exact
                 path={personalLoan}
-                render={() => (
-                  <PersonalLoan mobile={mobile} open={openLoanModal} />
-                )}
+                render={() => <DelhiPage />}
               />
               <Route
                 exact
@@ -324,10 +347,8 @@ function App() {
               />
               <Route
                 exact
-                path={loanInGurgaon}
-                render={() => (
-                  <LoanInGurgaon mobile={mobile} open={openLoanModal} />
-                )}
+                path={gurgaonDesignPages}
+                render={() => <GurgaonPage />}
               />
               <Route
                 exact
@@ -336,13 +357,7 @@ function App() {
                   <LoanInGhaziabad mobile={mobile} open={openLoanModal} />
                 )}
               />
-              <Route
-                exact
-                path={loanInNoida}
-                render={() => (
-                  <LoanInNoida mobile={mobile} open={openLoanModal} />
-                )}
-              />
+              <Route exact path={loanInNoida} render={() => <NoidaPage />} />
               <Route
                 exact
                 path={cibilDefaulter}

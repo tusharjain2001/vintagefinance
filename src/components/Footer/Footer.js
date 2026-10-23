@@ -20,10 +20,17 @@ import {
   earlySalaryLoan,
   faqPage,
   grievanceRedressal,
+  loan40kSalary,
+  loanAfterBankRejection,
+  loanAfterCibilSettlement,
   loanAgainstProperty,
   loanInGhaziabad,
   loanInGurgaon,
   loanInNoida,
+  loanWithMultipleEmis,
+  loanWithWrittenOffAccount,
+  lowCibilDefaulterFaridabad,
+  lowCibilDefaulterGreaterNoida,
   personalLoan,
   privacyPolicy,
   privateLoan,
@@ -225,6 +232,27 @@ const Footer = ({ setToast, setPolicy }) => {
             <li onClick={() => history.push(loanInGhaziabad)}>
               Personal Loan in Ghaziabad
             </li>
+            <li onClick={() => history.push(loan40kSalary)}>
+              Personal Loan on ₹40,000 Salary
+            </li>
+            <li onClick={() => history.push(loanAfterCibilSettlement)}>
+              Loan After CIBIL Settlement
+            </li>
+            <li onClick={() => history.push(loanWithMultipleEmis)}>
+              Personal Loan with Multiple EMIs
+            </li>
+            <li onClick={() => history.push(loanWithWrittenOffAccount)}>
+              Loan with Written-off Account
+            </li>
+            <li onClick={() => history.push(loanAfterBankRejection)}>
+              Personal Loan After Bank Rejection
+            </li>
+            <li onClick={() => history.push(lowCibilDefaulterFaridabad)}>
+              Low CIBIL Personal Loan in Faridabad
+            </li>
+            <li onClick={() => history.push(lowCibilDefaulterGreaterNoida)}>
+              Low CIBIL Personal Loan in Greater Noida
+            </li>
           </ul>
         </div>
         <div className={classes.Column}>
@@ -296,7 +324,7 @@ const Footer = ({ setToast, setPolicy }) => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "40px",
+          padding: "20px 40px 4px",
         }}
         className={classes.FMb}
       >

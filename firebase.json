@@ -2,6 +2,23 @@
   "hosting": {
     "public": "build",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "redirects": [
+      {
+        "source": "/personal-loan-noida.html",
+        "destination": "/personal-loan-low-cibil-defaulter-noida.html",
+        "type": 301
+      },
+      {
+        "source": "/personal-loan-gurgaon.html",
+        "destination": "/personal-loan-low-cibil-defaulter-gurgaon.html",
+        "type": 301
+      },
+      {
+        "source": "/personal-loan-ghaziabad.html",
+        "destination": "/personal-loan-low-cibil-defaulter-ghaziabad.html",
+        "type": 301
+      }
+    ],
     "rewrites": [
       {
         "source": "**",

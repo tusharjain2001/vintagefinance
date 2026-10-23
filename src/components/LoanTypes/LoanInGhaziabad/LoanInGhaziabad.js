@@ -15,7 +15,7 @@ const LoanInGhaziabad = ({ mobile, open }) => {
           Personal Loan in Ghaziabad - Loan Providers Ghaziabad | Vintage
           Finance
         </title>
-        <link rel="canonical" href="https://www.vintagefinance.in/personal-loan-ghaziabad.html"/>
+        <link rel="canonical" href="https://www.vintagefinance.in/personal-loan-low-cibil-defaulter-ghaziabad.html"/>
 
         <meta
           name="description"

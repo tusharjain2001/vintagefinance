@@ -28,8 +28,10 @@ function htmlFiles(dir, found = []) {
 const SCRIPT = /<script(?![^>]*\s(?:async|defer)[\s=>])([^>]*\ssrc="\/static\/js\/[^"]+"[^>]*)>/g;
 
 // main.*.chunk.css carries the header and hero styles, so it stays blocking.
-// Every other chunk stylesheet belongs to a section below the fold.
-const STYLE = /<link([^>]*\shref="\/static\/css\/(?!main\.)[^"]+\.chunk\.css"[^>]*)>/g;
+// So do the city landing pages' lp-* chunks, which style the whole page
+// including its hero. Every other chunk stylesheet belongs to a section below
+// the fold.
+const STYLE = /<link([^>]*\shref="\/static\/css\/(?!main\.|lp-)[^"]+\.chunk\.css"[^>]*)>/g;
 
 let files = 0;
 let deferred = 0;
