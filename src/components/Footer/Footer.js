@@ -118,6 +118,12 @@ const Footer = ({ setToast, setPolicy }) => {
                 <br /> NEW DELHI- 110008
               </li>
             </ul>
+            <ul className={classes.Ul}>
+              <li className={`${classes.UlHeading} ${classes.UlLi}`}>
+                For complaints
+              </li>
+              <li className={classes.UlLi}>support@vintagefinance.in</li>
+            </ul>
           </div>
         </div>
         <div className={classes.Column}>

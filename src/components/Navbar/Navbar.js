@@ -5,7 +5,7 @@ import classes from "./Navbar.module.css";
 // import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 // import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import LoanProduct from "../../pages/LoanProduct/LoanProduct";
-import { aboutUs, blog, dsaSignup, grievanceRedressal } from "../../App";
+import { aboutUs, blog, dsaSignup } from "../../App";
 import FixedWeb from "../FixedWeb/FixedWeb";
 import FixedWhatsappBtn from "../FixedButton/FixedButton";
 
@@ -102,15 +102,6 @@ const Navbar = ({ open, close, mobile, number, dialog, setDialog }) => {
             >
               Blogs
             </NavLink>
-            <NavLink
-              to={grievanceRedressal}
-              onClick={() => {
-                setShowSideDrawer(false);
-              }}
-              activeClassName={classes.Active}
-            >
-              Complaints
-            </NavLink>
           </div>
           <button className={classes.instantBtn} onClick={open}>
             GET INSTANT APPROVAL
@@ -165,15 +156,6 @@ const Navbar = ({ open, close, mobile, number, dialog, setDialog }) => {
               rel="noreferrer"
             >
               Blogs
-            </NavLink>
-            <NavLink
-              to={grievanceRedressal}
-              onClick={() => {
-                setShowSideDrawer(false);
-              }}
-              activeClassName={classes.Active}
-            >
-              Complaints
             </NavLink>
             <a href="tel:+91 9899055381" className={classes.NumAnchor}>
               <div className={classes.Num}>
