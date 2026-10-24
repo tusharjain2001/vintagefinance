@@ -42,7 +42,7 @@ export const cibilOptions = [
 
 // Same rules, in the same order, as the zod schema in the Lovable source.
 // Returns the cleaned values, or the first problem found.
-export function validateEnquiry(form) {
+export function validateEnquiry(form, cities = ["Gurgaon"]) {
   const name = String(form.name || "").trim();
   const email = String(form.email || "").trim().toLowerCase();
   const phone = String(form.phone || "");
@@ -54,6 +54,7 @@ export function validateEnquiry(form) {
     return { error: "Please enter a valid email address." };
   if (!/^[6-9]\d{9}$/.test(phone))
     return { error: "Please enter a valid 10-digit Indian mobile number." };
+  if (!cities.includes(form.city)) return { error: "Please choose your city." };
   if (!Number.isFinite(salary) || salary < 30000)
     return { error: "Minimum net monthly salary is ₹30,000." };
   if (salary > 10000000) return { error: "Please enter your net monthly salary." };
@@ -67,7 +68,7 @@ export function validateEnquiry(form) {
       name,
       email,
       phone,
-      city: "Gurgaon",
+      city: form.city,
       salary,
       amount,
       employment: "Salaried employee",

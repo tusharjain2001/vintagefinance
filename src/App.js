@@ -64,6 +64,25 @@ const DelhiPage = lazy(() =>
 const GurgaonPage = lazy(() =>
   import(/* webpackChunkName: "lp-gurgaon" */ "./pages/CityLoans/Gurgaon/GurgaonPage")
 );
+// Same chunk as the Gurgaon page, so the shared design CSS ships once.
+const WrittenOffPage = lazy(() =>
+  import(/* webpackChunkName: "lp-gurgaon" */ "./pages/CityLoans/WrittenOff/WrittenOffPage")
+);
+const FaridabadPage = lazy(() =>
+  import(/* webpackChunkName: "lp-gurgaon" */ "./pages/CityLoans/Faridabad/FaridabadPage")
+);
+const BankRejectionPage = lazy(() =>
+  import(/* webpackChunkName: "lp-gurgaon" */ "./pages/CityLoans/BankRejection/BankRejectionPage")
+);
+const GreaterNoidaPage = lazy(() =>
+  import(/* webpackChunkName: "lp-gurgaon" */ "./pages/CityLoans/GreaterNoida/GreaterNoidaPage")
+);
+const MultipleEmisPage = lazy(() =>
+  import(/* webpackChunkName: "lp-gurgaon" */ "./pages/CityLoans/MultipleEmis/MultipleEmisPage")
+);
+const CibilSettlementPage = lazy(() =>
+  import(/* webpackChunkName: "lp-gurgaon" */ "./pages/CityLoans/CibilSettlement/CibilSettlementPage")
+);
 const NoidaPage = lazy(() =>
   import(/* webpackChunkName: "lp-noida" */ "./pages/CityLoans/Noida/NoidaPage")
 );
@@ -135,12 +154,6 @@ export const lowCibilDefaulterGreaterNoida =
 const gurgaonDesignPages = [
   loanInGurgaon,
   loan40kSalary,
-  loanAfterCibilSettlement,
-  loanWithMultipleEmis,
-  loanWithWrittenOffAccount,
-  loanAfterBankRejection,
-  lowCibilDefaulterFaridabad,
-  lowCibilDefaulterGreaterNoida,
 ];
 
 function App() {
@@ -349,6 +362,36 @@ function App() {
                 exact
                 path={gurgaonDesignPages}
                 render={() => <GurgaonPage />}
+              />
+              <Route
+                exact
+                path={loanWithWrittenOffAccount}
+                render={() => <WrittenOffPage />}
+              />
+              <Route
+                exact
+                path={lowCibilDefaulterFaridabad}
+                render={() => <FaridabadPage />}
+              />
+              <Route
+                exact
+                path={loanAfterBankRejection}
+                render={() => <BankRejectionPage />}
+              />
+              <Route
+                exact
+                path={lowCibilDefaulterGreaterNoida}
+                render={() => <GreaterNoidaPage />}
+              />
+              <Route
+                exact
+                path={loanWithMultipleEmis}
+                render={() => <MultipleEmisPage />}
+              />
+              <Route
+                exact
+                path={loanAfterCibilSettlement}
+                render={() => <CibilSettlementPage />}
               />
               <Route
                 exact

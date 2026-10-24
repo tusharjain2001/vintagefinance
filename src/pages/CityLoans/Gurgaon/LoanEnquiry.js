@@ -5,14 +5,30 @@ import { sendLead } from "../shared/sendLead";
 import { Button } from "./ui";
 import { cibilOptions, validateEnquiry } from "./loanCalculator";
 
-export function LoanEnquiry({ embedded = false }) {
+// A single city is preselected; with several, the visitor has to pick one.
+export function CitySelect({ cities, ...props }) {
+  return (
+    <select defaultValue={cities.length === 1 ? cities[0] : ""} {...props}>
+      {cities.length > 1 && (
+        <option value="" disabled>
+          Select your city
+        </option>
+      )}
+      {cities.map((city) => (
+        <option key={city}>{city}</option>
+      ))}
+    </select>
+  );
+}
+
+export function LoanEnquiry({ embedded = false, cities = ["Gurgaon"] }) {
   const [status, setStatus] = useState("");
   const [sending, setSending] = useState(false);
   async function submit(event) {
     event.preventDefault();
     const formElement = event.currentTarget;
     const form = Object.fromEntries(new FormData(formElement));
-    const { error, values } = validateEnquiry(form);
+    const { error, values } = validateEnquiry(form, cities);
     if (error) {
       setStatus(error);
       return;
@@ -72,9 +88,7 @@ export function LoanEnquiry({ embedded = false }) {
           </label>
           <label>
             City
-            <select name="city" defaultValue="Gurgaon" required>
-              <option value="Gurgaon">Gurgaon</option>
-            </select>
+            <CitySelect name="city" cities={cities} required />
           </label>
           <label>
             Net monthly salary (₹)
@@ -120,7 +134,7 @@ export function LoanEnquiry({ embedded = false }) {
   );
 }
 
-export function LoanApplication({ open, onOpenChange }) {
+export function LoanApplication({ open, onOpenChange, cities, area = "Gurgaon" }) {
   return (
     <Dialog
       open={open}
@@ -134,9 +148,9 @@ export function LoanApplication({ open, onOpenChange }) {
         Personal loan for salaried employees
       </h2>
       <p id="application-description" className="text-sm text-muted-foreground">
-        Gurgaon · Up to ₹15 lakh · Minimal documentation
+        {area} · Up to ₹15 lakh · Minimal documentation
       </p>
-      <LoanEnquiry embedded />
+      <LoanEnquiry embedded cities={cities} />
     </Dialog>
   );
 }

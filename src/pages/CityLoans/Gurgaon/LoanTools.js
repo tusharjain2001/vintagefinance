@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ArrowUpRight, Info } from "lucide-react";
 import { Button } from "./ui";
 import { calculateEligibility, calculateLoan, formatRupees } from "./loanCalculator";
+import { CitySelect } from "./LoanEnquiry";
 
 function LoanCalculator({ onApply }) {
   const [amount, setAmount] = useState(200000);
@@ -117,7 +118,7 @@ function LoanCalculator({ onApply }) {
   );
 }
 
-export function LoanTools({ onApply, tab, setTab }) {
+export function LoanTools({ onApply, tab, setTab, cities = ["Gurgaon"] }) {
   const [salary, setSalary] = useState(40000);
   const [existing, setExisting] = useState(0);
   const [age, setAge] = useState(30);
@@ -171,9 +172,7 @@ export function LoanTools({ onApply, tab, setTab }) {
               </label>
               <label>
                 City
-                <select defaultValue="Gurgaon">
-                  <option>Gurgaon</option>
-                </select>
+                <CitySelect cities={cities} />
               </label>
               <label>
                 Employment type
